@@ -229,9 +229,9 @@ void CMain::JSONUpdateThread(void *pUser)
 				if(Days > 0)
 				{
 					if(Days > 1)
-						str_format(aUptime, sizeof(aUptime), "%d 天", Days);
+						str_format(aUptime, sizeof(aUptime), "%d Days", Days);
 					else
-						str_format(aUptime, sizeof(aUptime), "%d 天", Days);
+						str_format(aUptime, sizeof(aUptime), "%d Days", Days);
 				}
 				else
 					str_format(aUptime, sizeof(aUptime), "%02d:%02d:%02d", (int)(pClients[i].m_Stats.m_Uptime/60.0/60.0), (int)((pClients[i].m_Stats.m_Uptime/60)%60), (int)((pClients[i].m_Stats.m_Uptime)%60));
